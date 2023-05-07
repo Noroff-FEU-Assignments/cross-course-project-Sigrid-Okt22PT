@@ -165,6 +165,7 @@ nav {
     grid-row: 1;
   }
 
+
 .logo img{
     margin-top: -20px;
     width: 150px;
@@ -188,26 +189,49 @@ nav a{
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
-    display: flex;
+    display: grid;
     align-items: center;
     justify-content: center;
 }
+
+@media screen and (max-width:700px) {
+    .button-row { 
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;  
+        margin-top: 50px;
+    }
+    .button-yellow{
+        background-color: #FCBF49;
+        font-size: 24px;
+        border: none;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        width: 100%;
+        height: 70px;
+    }
     
-.button-row { 
-    z-index: 2;
-    position: absolute;
-    top:430px;
+    
+}
+@media screen and (min-width:700px) {
+    .button-row { 
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;  
+    }
+    .button-yellow{
+        background-color: #FCBF49;
+        font-size: 24px;
+        margin-top: 40px;
+        border: none;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        width: 100%;
+        height: 70px;
+    }
+    
 }
 
-.button-yellow{
-    background-color: #FCBF49;
-    font-size: 24px;
-    margin: 20px;
-    border: none;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    width: 200px;
-    height: 70px;
-}
+
+
 
 .button-yellow a{
     color: rgb(0, 0, 0);
@@ -376,8 +400,9 @@ nav a{
     margin: 0;
     background-color: #EDECEC;
     width: 100%;
-    height: 300px;
+    min-height: 300px;
   }
+  @media screen and (min-width:700px) {
   .wrapper-footer {
     padding: 3rem;
     display: grid;
@@ -397,6 +422,19 @@ nav a{
     grid-column: 4;
     grid-row: 1;
   }
+}
+@media screen and (max-width:700px) {
+    .wrapper-footer {
+        padding: 3rem;
+        display: grid;
+        grid-template-columns: (1,1fr);
+        gap: 10px;
+        grid-auto-rows: minmax(100px, auto);
+      }
+    
+}
+
+
   footer h2{
     color: #626262;
     font-weight: 500;
