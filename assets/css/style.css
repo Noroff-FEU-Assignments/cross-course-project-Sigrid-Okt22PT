@@ -501,4 +501,9 @@ nav a{
     justify-content: space-around;
 }
 
+.product-page-card{
+  background-color: #ffffff;
+  margin: 20px;
+  padding: 30px;
+}
 
