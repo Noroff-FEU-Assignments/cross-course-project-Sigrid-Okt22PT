@@ -6,11 +6,7 @@ const params = new URLSearchParams(queryString);
 
 const id = params.get("id");
 
-console.log(id);
-
 const urlId = "https://api.noroff.dev/api/v1/rainy-days/" + id ;
-
-console.log(urlId);
 
 async function fetchProduct() {
 
@@ -18,13 +14,10 @@ async function fetchProduct() {
         const response = await fetch(urlId);
         const product = await response.json();
 
-        console.log(product);
-
         createHtml(product);
       
     }
     catch(error) {
-        console.log(error);
         productInfo.innerHTML = message("error", error);
     }
     
