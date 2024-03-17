@@ -21,16 +21,34 @@
   </head>
   <body class="blue">
     <header>
-        <nav>
-          <div class="wrapper-nav">
-            <a href="products-men.html" class="one-nav center-all">MEN</a>
-            <a href="products-men.html" class="two-nav center-all">WOMAN</a>
-            <a href="index.html" class="three-nav center-all logo"><img class=" logo" src="assets/images/RainyDays_Logo 2.png" alt="Logo"></a>
-            <a href="products-men.html" class="four-nav center-all"><i class="fas fa-regular fa-magnifying-glass fa-lg"></i></a>
-            <a href="checkout.html" class="five-nav center-all"><i class="fas fa-regular fa-cart-shopping fa-lg"></i></a>
+      <nav>
+        <div class="wrapper-nav">
+          <a href="products-men.html" class="one-nav center-all">MEN</a>
+          <a href="products-women.html" class="two-nav center-all">WOMAN</a>
+          <a href="index.html" class="three-nav center-all logo"><img class=" logo" src="assets/images/RainyDays_Logo 2.png" alt="Logo"></a>
+          <a href="#" class="four-nav center-all"><i class="fas fa-regular fa-magnifying-glass fa-lg"></i></a>
+          <a href="checkout.html" class="five-nav center-all"><i class="fas fa-regular fa-cart-shopping fa-lg"></i></a>
+        </div>
+        <div class="wrapper-nav-mobil" >
+          <a href="javascript:void(0);" onclick="myNav()" class="one-nav center-all"><i class="fas fa-regular fa-bars fa-lg"></i></a>
+          <a href="index.html" class="three-nav center-all logo"><img class=" logo" src="assets/images/RainyDays_Logo 2.png" alt="Logo"></a>
+          <a href="checkout.html" class="five-nav center-all"><i class="fas fa-regular fa-cart-shopping fa-lg"></i></a>
+          <div class="nav-mobile-dropdown"  id="navMobile">
+            <div class="wrapper-nav-mobil">
+              <a href="javascript:void(1);" onclick="myNav()" class="one-nav center-all"><i class="fas fa-regular fa-x fa-lg"></i></a>
+              <a href="index.html" class="three-nav center-all logo"><img class=" logo" src="assets/images/RainyDays_Logo 2.png" alt="Logo"></a>
+              <a href="checkout.html" class="five-nav center-all"><i class="fas fa-regular fa-cart-shopping fa-lg"></i></a>
+            </div>
+            <a href="products-men.html" class=" center-all">MEN</a>
+            <a href="products-women.html" class=" center-all">WOMAN</a>
+            <a href="about.html" class=" center-all">ABOUT</a>
+            <a href="#" class="center-all"><i class="fas fa-regular fa-magnifying-glass fa-lg"></i></a>
+            <a href="checkout.html" class=" center-all"><i class="fas fa-regular fa-cart-shopping fa-lg"></i></a>
           </div>
-        </nav>
-      </header>
+        </div>
+      
+      </nav>
+    </header>
 
 
     <footer id="footer">
@@ -65,5 +83,6 @@
   
   
       <script src="/assets/js/script.js"></script>
+      <script src="assets/js/nav.js"></script>
     </body>
   </html>
