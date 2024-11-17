@@ -30,13 +30,12 @@ function createHtml(product) {
         productInfo.innerHTML = `<div class="product-page-card">
         <h1>${product.name}</h1>
        <div class="products-pic">
-           <img src="${product.images.src}" alt="${product.images.alt}">
+           <img src="${product.images[0].src}" alt="${product.images[0].alt}">
        </div>
        <div class="">
-           <h1>${product.discountedPrice}</h1><p style="color:red;">${product.price}</p>
+           <h1>${product.prices.price}</h1><p style="color:red;">${product.prices.regular_price}</p>
            <p>${product.description}</p>
-           <p>${product.sizes}</p>
-           <p>${product.baseColor}</p>
+           
            
            <a href="checkout.html" ><i class="fas fa-regular fa-cart-shopping fa-lg"></i></a>
            </a>
@@ -46,13 +45,12 @@ function createHtml(product) {
         productInfo.innerHTML = `<div class="product-page-card">
         <h1>${product.name}</h1>
        <div class="products-pic">
-           <img src="${product.image}" alt="${product.image}">
+           <img src="${product.images[0].src}" alt="${product.images[0].alt}">
        </div>
        <div class="">
-           <h1>${product.price}</h1>
+           <h1>${product.prices.price}</h1>
            <p>${product.description}</p>
-           <p>${product.sizes}</p>
-           <p>${product.baseColor}</p>
+           
            <a href="checkout.html" ><i class="fas fa-regular fa-cart-shopping fa-lg"></i></a>
            </a>
         </div>`;

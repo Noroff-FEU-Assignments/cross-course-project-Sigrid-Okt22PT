@@ -23,11 +23,11 @@ async function getMenProducts() {
         <div class="products white m-1">
         <a href="product-page.html?id=${product[i].id}">
                 <div class="products-pic">
-                    <img src="" alt="Product">
+                    <img src="${product[i].images[0].src}" alt="${product[i].images[0].alt}">
                 </div>
                 <div class="products-info">
                     <h2 class="ls">${product[i].name}</h2>
-                    <p>${product[i].price}</p>
+                    <p>${product[i].prices.price}</p>
                     <a href="products-men.html" ><i class="fas fa-regular fa-cart-shopping fa-lg"></i></a>
                     </a>
                 </div>`;
@@ -55,11 +55,11 @@ async function getWomProducts() {
         <div class="products white m-1">
         <a href="product-page.html?id=${product[i].id}">
                 <div class="products-pic">
-                    <img src="${product[i].image}" alt="Product">
+                    <img src="$${product[i].images[0].src}" alt="${product[i].images[0].alt}">
                 </div>
                 <div class="products-info">
                     <h2 class="ls">${product[i].name}</h2>
-                    <p>${product[i].price}</p>
+                    <p>${product[i].prices.price}</p>
                     <a href="products-women.html" ><i class="fas fa-regular fa-cart-shopping fa-lg"></i></a>
                 </a>
                 </div>`;
@@ -78,17 +78,17 @@ async function getFavProducts() {
 favouritesDiv.innerHTML = "";
 for (let i = 0; i < product.length; i++) {
 
-    if(product[i].favorite==true) {
+    if(product[i].on_sale==true) {
         
     favouritesDiv.innerHTML += `
     <div class="products white m-1">
     <a href="product-page.html?id=${product[i].id}">
             <div class="products-pic">
-                <img src="${product[i].image}" alt="Product">
+                <img src="${product[i].images[0].src}" alt="${product[i].images[0].alt}">
             </div>
             <div class="products-info">
-                <h2 class="ls">${product[i].title}</h2>
-                <p>${product[i].price}</p>
+                <h2 class="ls">${product[i].name}</h2>
+                <p>${product[i].prices.price}</p>
                 <a href="products-men.html" ><i class="fas fa-regular fa-cart-shopping fa-lg"></i></a>
                 </a>
             </div>`;
