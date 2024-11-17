@@ -16,7 +16,7 @@ async function getMenProducts() {
 
     for (let i = 0; i < product.length; i++) {
 
-        if(product[i].on_sale==true){
+        if(product[i].categories[0].id==16){
 
 
         resultsMenDiv.innerHTML += `
@@ -48,14 +48,14 @@ async function getWomProducts() {
 
     for (let i = 0; i < product.length; i++) {
 
-        if(product[i].on_sale==true){
+        if(product[i].categories[0].id==17){
 
 
         resultsWomDiv.innerHTML += `
         <div class="products white m-1">
         <a href="product-page.html?id=${product[i].id}">
                 <div class="products-pic">
-                    <img src="$${product[i].images[0].src}" alt="${product[i].images[0].alt}">
+                    <img src="${product[i].images[0].src}" alt="${product[i].images[0].alt}">
                 </div>
                 <div class="products-info">
                     <h2 class="ls">${product[i].name}</h2>
