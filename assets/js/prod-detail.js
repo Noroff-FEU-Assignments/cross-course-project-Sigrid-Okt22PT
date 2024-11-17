@@ -6,7 +6,7 @@ const params = new URLSearchParams(queryString);
 
 const id = params.get("id");
 
-const urlId = "https://api.noroff.dev/api/v1/rainy-days/" + id ;
+const urlId = "https://sigridjohanne.site/wp-json/wc/store/products/" + id ;
 
 async function fetchProduct() {
 
@@ -26,11 +26,11 @@ async function fetchProduct() {
 fetchProduct();
 
 function createHtml(product) {
-    if (product.onSale==true){
+    if (product.on_sale==true){
         productInfo.innerHTML = `<div class="product-page-card">
-        <h1>${product.title}</h1>
+        <h1>${product.name}</h1>
        <div class="products-pic">
-           <img src="${product.image}" alt="${product.image}">
+           <img src="${product.images.src}" alt="${product.images.alt}">
        </div>
        <div class="">
            <h1>${product.discountedPrice}</h1><p style="color:red;">${product.price}</p>
@@ -44,7 +44,7 @@ function createHtml(product) {
     }
     else{
         productInfo.innerHTML = `<div class="product-page-card">
-        <h1>${product.title}</h1>
+        <h1>${product.name}</h1>
        <div class="products-pic">
            <img src="${product.image}" alt="${product.image}">
        </div>
