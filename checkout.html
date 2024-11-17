@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Rainy Days | Checkout</title>
+    <meta name="description" content="Jackets for everyone." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/195dafed95.js" crossorigin="anonymous"></script>
+  <!-- Hotjar Tracking Code for Rainy Days -->
+<script>
+  (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:3909012,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+  </head>
+  <body class="blue">
+    <header>
+      <nav>
+        <div class="wrapper-nav">
+          <a href="products-men.html" class="one-nav center-all">MEN</a>
+          <a href="products-women.html" class="two-nav center-all">WOMAN</a>
+          <a href="index.html" class="three-nav center-all logo"><img class=" logo" src="assets/images/RainyDays_Logo 2.png" alt="Logo"></a>
+          <a href="#" class="four-nav center-all"><i class="fas fa-regular fa-magnifying-glass fa-lg"></i></a>
+          <a href="checkout.html" class="five-nav center-all"><i class="fas fa-regular fa-cart-shopping fa-lg"></i></a>
+        </div>
+        <div class="wrapper-nav-mobil" >
+          <a href="javascript:void(0);" onclick="myNav()" class="one-nav center-all"><i class="fas fa-regular fa-bars fa-lg"></i></a>
+          <a href="index.html" class="three-nav center-all logo"><img class=" logo" src="assets/images/RainyDays_Logo 2.png" alt="Logo"></a>
+          <a href="checkout.html" class="five-nav center-all"><i class="fas fa-regular fa-cart-shopping fa-lg"></i></a>
+          <div class="nav-mobile-dropdown"  id="navMobile">
+            <div class="wrapper-nav-mobil">
+              <a href="javascript:void(1);" onclick="myNav()" class="one-nav center-all"><i class="fas fa-regular fa-x fa-lg"></i></a>
+              <a href="index.html" class="three-nav center-all logo"><img class=" logo" src="assets/images/RainyDays_Logo 2.png" alt="Logo"></a>
+              <a href="checkout.html" class="five-nav center-all"><i class="fas fa-regular fa-cart-shopping fa-lg"></i></a>
+            </div>
+            <a href="products-men.html" class=" center-all">MEN</a>
+            <a href="products-women.html" class=" center-all">WOMAN</a>
+            <a href="about.html" class=" center-all">ABOUT</a>
+            <a href="#" class="center-all"><i class="fas fa-regular fa-magnifying-glass fa-lg"></i></a>
+            <a href="checkout.html" class=" center-all"><i class="fas fa-regular fa-cart-shopping fa-lg"></i></a>
+          </div>
+        </div>
+      
+      </nav>
+    </header>
+
+    <main>
+        <div class="wrapper-checkout m-5">
+            <div class="checkout-colum white p-5">
+                <h2>checkout</h2>
+                <h2 class="mt">We need a little information about you</h2>
+                <form class="mt" action="submit.php" method="POST">
+                    
+                    <label for="email">Email address</label>
+                    <input type="text" name="email" />
+                    <label for="lastName">Last Name</label>
+                    <input type="text" name="lastName" />
+                    <label for="firstName">First name</label>
+                    <input type="text" name="firstName" />
+                    
+                    <h2>Shipping address</h2>
+                    <label for="email">Email address</label>
+                    <input type="text" name="email" />
+                    <label for="lastName">Last Name</label>
+                    <input type="text" name="lastName" />
+                    <label for="firstName">First name</label>
+                    <input type="text" name="firstName" />
+                    <fieldset class="m-5">
+                        <div>
+                            <input type="radio" name="delivery" value="1" id="Express"/>
+                            <label for="Express">Express</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="delivery" value="2" id="pickup"/>
+                            <label for="pickup">pick up</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="delivery" value="3" id="standard"/>
+                            <label for="standard">Standard</label>
+                        </div>
+                     
+                      </fieldset>
+        
+                    <input class="button-yellow" type="submit" name="proceed to payment"/>
+                  </form>
+            </div>
+            <div class="checkout-cart-colum white p-2">
+                <h2>order summary</h2>
+                <p>1599 NOK <br /><b style="font-size: small;">(1 ITEM)</b></p>
+
+            </div>
+
+        </div>
+
+
+
+
+    </main>
+
+    <footer id="footer">
+        <div class="wrapper-footer">
+          <div class="footer-column-1">
+            <h2 class="ls">FOLLOW US</h2>
+            <div class="line"></div> 
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+          </div>
+          <div class="footer-column-2">
+            <h2 class="ls">COMPANY</h2>
+            <div class="line"></div> 
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-column-3">
+            <h2 class="ls">PAGES</h2>
+            <div class="line"></div> 
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="products-men.html">Products</a></li>
+              <li><a href="checkout.html">Checkout</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+  
+  
+  
+      <script src="/assets/js/script.js"></script>
+      <script src="assets/js/nav.js"></script>
+    </body>
+  </html>
