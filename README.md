@@ -34,7 +34,7 @@ You can visit the live demo of the website [here](https://sigrid-okt22pt-wct-ass
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![CSS](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![WordPress](https://img.shields.io/badge/WordPress-%23117AC9.svg?style=for-the-badge&logo=WordPress&logoColor=white)
-![Hotjar](https://img.shields.io/badge/adobe-%23FF0000.svg?style=for-the-badge&logo=adobe&logoColor=white)
+![Hotjar](https://img.shields.io/badge/hotjar-%23FF0000.svg?style=for-the-badge&logo=hotjar&logoColor=white)
 
 
 ### Installing
